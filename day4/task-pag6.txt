@@ -1,0 +1,65 @@
+
+(All Question Discussed)
+problem1: Maximum Perimeter Triangle
+
+    sort sticks into descending order
+    check triples (a,b,c)
+        a<b+c 
+
+problem 2: Alternatic Characters
+--- iterate through string, count Characters matches with previos 
+return the no of delete
+
+problem 3: check its pangram
+    convert entire string into lower Case 
+    then compare with all a-z letters and if the length is 26 then
+    print its pangram else not
+
+    in python use: set('a-z')
+    ins JS use: regex
+
+Problem 4: Beautiful Binary String
+
+    iterate the string till its length-2
+    everytime you can check the pattern with "010"
+    if match then increase the coount by 1
+    and increase i by 3
+
+    if not match then increase i by 1
+
+problem 5: Utopian Tree
+    iterate the loop start height=1 at level 0
+    loop start from 1
+    logic for double and increment by 1
+
+problem 6: beautiful triplets
+    remove duplicates using set
+    then start from first element increase value by 3 if that number
+    present in array then agian increase by 3 and take it as pair count
+
+problem 7: Picking Numbers
+    longest subarray where the diffrence is <=1
+
+    declare arrayMaxLen=0
+    iterate loop create subarray as per the condition and then compare maxlen
+    lastly return max length
+
+problem 8: Repeated String
+    find Repeated String base on string and s and n
+
+    n=10 s="aba"
+    full=Math.floor(n/s.length)  = (10/3) = 3
+    rem= n % s.length = 10%3 = 1
+    s.count('a').length * full + s.substring(0).length
+    2*3+1 = 7
+
+problem 9: Hackerrank is a String   
+        take one target="hackerrank"
+        start iterating your string  and if its matches with the target string
+        letter then increase by 1
+        if match then print YES
+
+problem 10: PDF Viewer
+    based on the given height array 
+    find out height for all word letter and get the max height
+    then return maxheight * word_length
