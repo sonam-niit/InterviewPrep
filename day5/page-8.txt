@@ -1,0 +1,18 @@
+
+Practice Questions:
+1. Taum and B'day
+2. Funny String
+3. Sum vs XOR
+4. String Construction
+5. Find Digits
+6. Palindrome Index
+7. Lisa's Workbook
+8. Smart Number
+9. XOR Strings
+10.Fair Rations
+
+11. Anagram
+12.Maximizing XOR
+13. Counting Sort 1
+14. Priyanka and Toys
+15. Cut the sticks

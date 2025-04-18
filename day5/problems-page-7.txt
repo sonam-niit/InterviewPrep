@@ -1,0 +1,83 @@
+Service Lane:
+    n  = width
+    case = [test cases]
+    check the min length in the given test raange
+    [1,3] you need to take i=1 and j=3 find the min width
+
+lonely Integer:
+    use XOR operator  because
+        a ^ a = 0
+        a ^ 0 = a 
+
+        apply logic and get the resultant loney number
+
+Luck problem
+    You can lose k important contents
+    for each content you will have luck points and important (1 /0)
+    if you lose the content luck will be added
+    if you want to win content subtract its luck points
+
+    -- logic    
+        sort the contest 
+        iterate luck , important in contest
+        if imp==1 (important content)
+            check the K based on that lose or win the contents
+            (add reduce luck point as per the choice)
+        else
+            add to total luck point
+
+AppendAndDelete
+    iterate both sourceString (s) and targetString (t)
+    find common value length
+
+    then check add delete operations
+    result=s.length + t.length - 2 * common
+
+    if result and k value are equals then print YES else print NO
+
+Misère Nim:
+    if no of piles odd then second player won the game else operations
+
+Jumping On cloud:
+    by default take jump of 2
+    check that cloud value is 0 then jump 2 else jump 1
+    reach to the last cloud (0)
+    return min no of jump
+
+GemStone:
+    function gemstones(arr) {
+    let common = new Set(arr[0])
+    console.log(common);
+    for(let rock of arr.slice(1)){
+        common = new Set([...common].filter(c=>rock.includes(c)))
+        console.log(rock,':',common)
+    }
+}
+
+gemstones(['abcdde', 'baccd', 'eeabg','cddda'])
+
+(find the first set of gems and check those gems present in next elements 
+of array)
+
+Two Strings:
+    use the same logic above just use direct s1 and s2 rather than using array
+
+Chocolate Feast:
+    m=2 (per 2 wrapper get 1 Chocolate)
+    c=3 cost per chock
+    n=15 (amount of money in hand)
+
+    chocklates = n / c (use Math.floor or //)
+    wrapper = chocklates
+
+    while(wrapper>=m){
+        temp = wrapper / m 
+        chocklates += temp
+        wrapper= wrapper%m + temp
+    }
+
+    retunr chocklates
+
+ACM ICPC Team:
+    Logic you need to do using or operation and find
+    max subjects with max number of teams
